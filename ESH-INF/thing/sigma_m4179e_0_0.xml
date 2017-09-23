@@ -5,9 +5,9 @@
   xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0
                       http://eclipse.org/smarthome/schemas/thing-description/v1.0.0">
 
-  <thing-type id="devolo_smoke_00_000" listed="false">
-    <label>Smoke Detector Home Control Smoke Detector</label>
-    <description>Home Control Smoke Detector</description>
+  <thing-type id="sigma_m4179e_00_000" listed="false">
+    <label>M417_9E Smart Temperature &amp; Humidity Sensor</label>
+    <description>Smart Temperature &amp; Humidity Sensor</description>
 
     <!-- CHANNEL DEFINITIONS -->
     <channels>
@@ -17,16 +17,16 @@
           <property name="binding:*:OnOffType">SENSOR_BINARY</property>
         </properties>
       </channel>
-      <channel id="alarm_smoke" typeId="alarm_smoke">
-        <label>Alarm (smoke)</label>
+      <channel id="sensor_temperature" typeId="sensor_temperature">
+        <label>Sensor (temperature)</label>
         <properties>
-          <property name="binding:*:OnOffType">ALARM;type=SMOKE</property>
+          <property name="binding:*:DecimalType">SENSOR_MULTILEVEL;type=TEMPERATURE</property>
         </properties>
       </channel>
-      <channel id="alarm_burglar" typeId="alarm_burglar">
-        <label>Alarm (burglar)</label>
+      <channel id="sensor_relhumidity" typeId="sensor_relhumidity">
+        <label>Sensor (relative humidity)</label>
         <properties>
-          <property name="binding:*:OnOffType">ALARM;type=BURGLAR</property>
+          <property name="binding:*:DecimalType">SENSOR_MULTILEVEL;type=RELATIVE_HUMIDITY</property>
         </properties>
       </channel>
       <channel id="battery-level" typeId="system.battery-level">
@@ -38,11 +38,11 @@
 
     <!-- DEVICE PROPERTY DEFINITIONS -->
     <properties>
-      <property name="vendor">Devolo</property>
-      <property name="modelId">Smoke Detector</property>
-      <property name="manufacturerId">0175</property>
-      <property name="manufacturerRef">2004:04A4</property>
-      <property name="dbReference">615</property>
+      <property name="vendor">Sigma Designs (Former Zensys)</property>
+      <property name="modelId">M417_9E</property>
+      <property name="manufacturerId">0000</property>
+      <property name="manufacturerRef">0003:0008</property>
+      <property name="dbReference">422</property>
     </properties>
 
   </thing-type>

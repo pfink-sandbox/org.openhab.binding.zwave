@@ -5,27 +5,27 @@
   xsi:schemaLocation="http://eclipse.org/smarthome/schemas/thing-description/v1.0.0
                       http://eclipse.org/smarthome/schemas/thing-description/v1.0.0">
 
-  <thing-type id="enerwave_enerwavezw15s_00_000" listed="false">
-    <label>Enerwave ZW15S Enerwave ZW15S Binary Switch</label>
-    <description>Enerwave ZW15S Binary Switch</description>
+  <thing-type id="horstmann_c17zw_00_000" listed="false">
+    <label>C17-ZW Timeswitch</label>
+    <description>Timeswitch</description>
 
     <!-- CHANNEL DEFINITIONS -->
     <channels>
       <channel id="switch_binary" typeId="switch_binary">
         <label>Switch</label>
         <properties>
-          <property name="binding:*:OnOffType">SWITCH_BINARY</property>
+          <property name="binding:*:OnOffType">SWITCH_BINARY,BASIC</property>
         </properties>
       </channel>
     </channels>
 
     <!-- DEVICE PROPERTY DEFINITIONS -->
     <properties>
-      <property name="vendor">Wenzhou MTLC Electric Appliances Co.,Ltd.</property>
-      <property name="modelId">Enerwave ZW15S</property>
-      <property name="manufacturerId">011A</property>
-      <property name="manufacturerRef">0101:0102</property>
-      <property name="dbReference">507</property>
+      <property name="vendor">Horstmann Controls Limited</property>
+      <property name="modelId">C17-ZW</property>
+      <property name="manufacturerId">0059</property>
+      <property name="manufacturerRef">0002:0002</property>
+      <property name="dbReference">652</property>
     </properties>
 
   </thing-type>
